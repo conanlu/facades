@@ -179,12 +179,12 @@ function populateInitImage()
 load the model
 */
 async function start() {
-    document.getElementById('status').innerHTML = 'Work-in-progress';
+    //document.getElementById('status').innerHTML = 'Work-in-progress';
     //load the model 
     model = await tf.loadModel('facades_model/model.json')
     
     //status 
-    document.getElementById('status').innerHTML = 'Model Loaded';
+    //document.getElementById('status').innerHTML = 'Model Loaded';
     
     //warm up 
     populateInitImage()
